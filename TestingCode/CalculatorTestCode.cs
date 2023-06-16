@@ -10,27 +10,45 @@ namespace TestingCode
         [TestMethod]
         public void Given_TwoNumbers_Should_Return_Sum()
         {
-            
+
             int x = 40;
             int y = 30;
             int expected = 70;
             Calculator calculator = new Calculator();
 
-            int actual=calculator.AddTwoNumers(x, y);
+            int actual = calculator.AddTwoNumbers(x, y);
 
 
-            Assert.AreEqual(expected, actual);  
-            
+            Assert.AreEqual(expected, actual);
+
         }
-        //[TestMethod]
-        //public void Given_TwoNumbers_Should_Return_Sub()
-        //{
-        //    int x = 40;
-        //    int y = 30;
-        //    int expected = 10;
-        //    Calculator calculator = new Calculator();
+        [TestMethod]
+        public void Given_TwoNumbers_Should_Return_Sub()
+        {
+            Calculator cal = new Calculator();
+            int res = cal.SubTwoNumbers(40, 30);
+            Assert.AreEqual(10, res);
 
-        //    int actual = Calculator.S
-        //    }
-    }
-    }
+
+        }
+        [TestMethod]
+        public void Given_TwoNumbers_Should_Return_Multi()
+        {
+            Calculator mul = new Calculator();
+            int res = mul.MultiTwoNumbers(10, 30);
+            Assert.AreEqual(300, res);
+
+        }
+
+
+
+
+
+
+
+
+
+
+}   }
+
+    
